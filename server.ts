@@ -25,6 +25,9 @@ app.use(morgan('combined'))
 app.get('/', (req: Request, res: Response) => {
 	res.send(ads)
 })
+app.get('/ppipee', (req: Request, res: Response) => {
+	res.send("Hello, Pipe")
+})
 
 app.listen(PORT, () => {
 	console.log('listening on port ', PORT)
